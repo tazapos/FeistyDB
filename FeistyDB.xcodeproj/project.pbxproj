@@ -24,6 +24,10 @@
 		324CCF5A1DC623C20056935B /* DatabaseValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CCF591DC623C20056935B /* DatabaseValue.swift */; };
 		324CCF5E1DC624950056935B /* DatabaseQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CCF5D1DC624950056935B /* DatabaseQueue.swift */; };
 		324CCF711DC69CEF0056935B /* ConcurrentDatabaseQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CCF701DC69CEF0056935B /* ConcurrentDatabaseQueue.swift */; };
+		328864021DDEE7050089C363 /* FeistyDBPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328864011DDEE7050089C363 /* FeistyDBPerformanceTests.swift */; };
+		328864041DDEE7050089C363 /* FeistyDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324CCF141DC61C0E0056935B /* FeistyDB.framework */; };
+		3288640B1DDEE9190089C363 /* TestDatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288640A1DDEE9190089C363 /* TestDatabaseError.swift */; };
+		3288640D1DDEED400089C363 /* TestDatabaseValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288640C1DDEED400089C363 /* TestDatabaseValue.swift */; };
 		32D3CF941DCD5A8B00BB53C6 /* DatabaseSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D3CF931DCD5A8B00BB53C6 /* DatabaseSerializable.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 324CCF131DC61C0E0056935B;
 			remoteInfo = FDDatabase;
+		};
+		328864051DDEE7050089C363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324CCF0B1DC61C0E0056935B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324CCF131DC61C0E0056935B;
+			remoteInfo = FeistyDB;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -59,6 +70,11 @@
 		324CCF591DC623C20056935B /* DatabaseValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseValue.swift; sourceTree = "<group>"; };
 		324CCF5D1DC624950056935B /* DatabaseQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseQueue.swift; sourceTree = "<group>"; };
 		324CCF701DC69CEF0056935B /* ConcurrentDatabaseQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentDatabaseQueue.swift; sourceTree = "<group>"; };
+		328863FF1DDEE7050089C363 /* FeistyDBPerformanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeistyDBPerformanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		328864011DDEE7050089C363 /* FeistyDBPerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeistyDBPerformanceTests.swift; sourceTree = "<group>"; };
+		328864031DDEE7050089C363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3288640A1DDEE9190089C363 /* TestDatabaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDatabaseError.swift; sourceTree = "<group>"; };
+		3288640C1DDEED400089C363 /* TestDatabaseValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDatabaseValue.swift; sourceTree = "<group>"; };
 		32CF82E41DD038B800A0E2FB /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		32D3CF931DCD5A8B00BB53C6 /* DatabaseSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseSerializable.swift; sourceTree = "<group>"; };
 		32D3CF951DCE2F4100BB53C6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -80,6 +96,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		328863FC1DDEE7050089C363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328864041DDEE7050089C363 /* FeistyDB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,6 +115,7 @@
 				32CF82E41DD038B800A0E2FB /* LICENSE.txt */,
 				324CCF161DC61C0E0056935B /* FeistyDB */,
 				324CCF211DC61C0E0056935B /* FeistyDBTests */,
+				328864001DDEE7050089C363 /* FeistyDBPerformanceTests */,
 				324CCF451DC61F020056935B /* sqlite */,
 				324CCF151DC61C0E0056935B /* Products */,
 			);
@@ -101,6 +126,7 @@
 			children = (
 				324CCF141DC61C0E0056935B /* FeistyDB.framework */,
 				324CCF1D1DC61C0E0056935B /* FeistyDBTests.xctest */,
+				328863FF1DDEE7050089C363 /* FeistyDBPerformanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				3236FD851DC6EDF90057703E /* FeistyDBTests.swift */,
+				3288640A1DDEE9190089C363 /* TestDatabaseError.swift */,
+				3288640C1DDEED400089C363 /* TestDatabaseValue.swift */,
 				324CCF241DC61C0E0056935B /* Info.plist */,
 			);
 			path = FeistyDBTests;
@@ -143,6 +171,15 @@
 				32135F101DC819CC004B0E93 /* feisty_db_register_sqlite_uuid_extension.c */,
 			);
 			path = sqlite;
+			sourceTree = "<group>";
+		};
+		328864001DDEE7050089C363 /* FeistyDBPerformanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				328864011DDEE7050089C363 /* FeistyDBPerformanceTests.swift */,
+				328864031DDEE7050089C363 /* Info.plist */,
+			);
+			path = FeistyDBPerformanceTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +234,24 @@
 			productReference = 324CCF1D1DC61C0E0056935B /* FeistyDBTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		328863FE1DDEE7050089C363 /* FeistyDBPerformanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 328864091DDEE7050089C363 /* Build configuration list for PBXNativeTarget "FeistyDBPerformanceTests" */;
+			buildPhases = (
+				328863FB1DDEE7050089C363 /* Sources */,
+				328863FC1DDEE7050089C363 /* Frameworks */,
+				328863FD1DDEE7050089C363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				328864061DDEE7050089C363 /* PBXTargetDependency */,
+			);
+			name = FeistyDBPerformanceTests;
+			productName = FeistyDBPerformanceTests;
+			productReference = 328863FF1DDEE7050089C363 /* FeistyDBPerformanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,6 +272,10 @@
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
+					328863FE1DDEE7050089C363 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 324CCF0E1DC61C0E0056935B /* Build configuration list for PBXProject "FeistyDB" */;
@@ -233,6 +292,7 @@
 			targets = (
 				324CCF131DC61C0E0056935B /* FeistyDB */,
 				324CCF1C1DC61C0E0056935B /* FeistyDBTests */,
+				328863FE1DDEE7050089C363 /* FeistyDBPerformanceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +306,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		324CCF1B1DC61C0E0056935B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328863FD1DDEE7050089C363 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,6 +347,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3236FD871DC6EF420057703E /* FeistyDBTests.swift in Sources */,
+				3288640B1DDEE9190089C363 /* TestDatabaseError.swift in Sources */,
+				3288640D1DDEED400089C363 /* TestDatabaseValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328863FB1DDEE7050089C363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328864021DDEE7050089C363 /* FeistyDBPerformanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +367,11 @@
 			isa = PBXTargetDependency;
 			target = 324CCF131DC61C0E0056935B /* FeistyDB */;
 			targetProxy = 324CCF1F1DC61C0E0056935B /* PBXContainerItemProxy */;
+		};
+		328864061DDEE7050089C363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324CCF131DC61C0E0056935B /* FeistyDB */;
+			targetProxy = 328864051DDEE7050089C363 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -463,6 +545,32 @@
 			};
 			name = Release;
 		};
+		328864071DDEE7050089C363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5T4XYKTQ8R;
+				INFOPLIST_FILE = FeistyDBPerformanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feisty-dog.FeistyDBPerformanceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		328864081DDEE7050089C363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5T4XYKTQ8R;
+				INFOPLIST_FILE = FeistyDBPerformanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feisty-dog.FeistyDBPerformanceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -492,6 +600,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		328864091DDEE7050089C363 /* Build configuration list for PBXNativeTarget "FeistyDBPerformanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328864071DDEE7050089C363 /* Debug */,
+				328864081DDEE7050089C363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
